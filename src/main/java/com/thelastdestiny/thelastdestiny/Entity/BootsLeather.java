@@ -1,28 +1,26 @@
-package com.thelastdestiny.thelastdestiny;
-
+package com.thelastdestiny.thelastdestiny.Entity;
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "pants_plate")
-public class PantsPlate extends ItemWoW {
+@Table(name = "boots_leather")
+public class BootsLeather extends ItemWoW {
 
 @ElementCollection
 private List<String> attributes = new ArrayList<>();
 
-    public PantsPlate() {}
+    public BootsLeather() {}
 
-    public PantsPlate(String name, String type, String spec, int price) {
+    public BootsLeather(String name, String type, String spec, int price) {
         super(name, type, spec, price);
-        this.attributes.add("Armor +220");
-        this.attributes.add("Stamina +480");
-        this.attributes.add("Strength +550");
+        this.attributes.add("Stamina +550");
+        this.attributes.add("Armor +250");
+        this.attributes.add("Agility +300");
     }
 
     public List<String> getAttributes() { return attributes; }

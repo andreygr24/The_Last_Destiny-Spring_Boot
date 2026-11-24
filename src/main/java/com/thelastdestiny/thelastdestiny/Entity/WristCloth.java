@@ -1,4 +1,4 @@
-package com.thelastdestiny.thelastdestiny;
+package com.thelastdestiny.thelastdestiny.Entity;
 
 
 import jakarta.persistence.ElementCollection;

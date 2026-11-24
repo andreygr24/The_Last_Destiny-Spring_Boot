@@ -1,4 +1,4 @@
-package com.thelastdestiny.thelastdestiny;
+package com.thelastdestiny.thelastdestiny.Entity;
 
     public interface Sellable{
 

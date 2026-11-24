@@ -1,4 +1,7 @@
-package com.thelastdestiny.thelastdestiny;
+package com.thelastdestiny.thelastdestiny.Service;
+
+import com.thelastdestiny.thelastdestiny.Entity.Apply;
+import com.thelastdestiny.thelastdestiny.Entity.Sellable;
 
 import java.util.List;
 

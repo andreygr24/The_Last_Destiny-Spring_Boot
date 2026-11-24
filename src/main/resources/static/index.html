@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Last Destiny - Of Rising Challenger</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+        body{background:#0a0a0f;color:#e5e5e5}
+        nav{display:flex;justify-content:space-between;padding:20px 40px;border-bottom:1px solid #a855f7}
+        nav b{color:#c0c0c0;letter-spacing:2px}
+        nav span{color:#a855f7}
+        .hero{text-align:center;padding:80px 20px;background:linear-gradient(#1a0b2e,#0a0a0f)}
+        .hero h1{font-size:64px;color:#c0c0c0;letter-spacing:4px}
+        .hero h2{color:#a855f7;margin:10px 0}
+        .hero p{color:#aaa;max-width:600px;margin:0 auto}
+        .section{padding:40px;max-width:1000px;margin:0 auto}
+        .section h2{color:#a855f7;margin-bottom:20px}
+        .grid{display:flex;flex-wrap:wrap;gap:15px}
+        .card{background:#14141f;border:1px solid #a855f7;border-radius:10px;padding:20px;width:220px}
+        .card b{color:#c0c0c0}
+        .card p{color:#aaa;font-size:14px;margin-top:5px}
+        input{padding:10px;margin:5px;width:300px;background:#1a1a2e;color:#fff;border:1px solid #c0c0c0;border-radius:5px}
+        button{background:#a855f7;color:#fff;border:none;padding:12px 25px;border-radius:5px;cursor:pointer}
+        footer{text-align:center;padding:20px;color:#777;border-top:1px solid #333}
+    </style>
+</head>
+<body>
+<nav><b>THE LAST <span>DESTINY</span></b><span>Miembros | Apply | Banco</span></nav>
+
+<div class="hero">
+    <h1>THE LAST DESTINY</h1>
+    <h2>Of Rising Challenger</h2>
+    <p>Demo de portafolio. Guild que tuve hace años, recreada como proyecto de aprendizaje en Java, MySQL y Spring Boot.</p>
+</div>
+
+<div class="section">
+    <h2>Miembros Activos</h2>
+    <div id="members" class="grid"></div>
+</div>
+
+<div class="section">
+    <h2>Apply - Demo visual</h2>
+    <p style="color:#aaa">El Apply es solo visual, no guarda de verdad.</p><br>
+    <input placeholder="Nombre de personaje"><br>
+    <input placeholder="Clase"><br>
+    <input placeholder="Rol"><br><br>
+    <button onclick="alert('Apply enviado - Demo')">Enviar Apply</button>
+</div>
+
+<div class="section">
+    <h2>Banco del Guild - Demo</h2>
+    <p style="color:#aaa">Descuentos: Miembro 5%, Raider 10%, Core Raider 20%.</p><br>
+    <div class="grid">
+        <div class="card"><b>HeadPlate</b><p>Plate - 500g</p></div>
+        <div class="card"><b>ChestCloth</b><p>Cloth - 450g</p></div>
+        <div class="card"><b>BootsLeather</b><p>Leather - 300g</p></div>
+        <div class="card"><b>PantsPlate</b><p>Plate - 550g</p></div>
+        <div class="card"><b>WristCloth</b><p>Cloth - 250g</p></div>
+    </div>
+</div>
+
+<footer>The Last Destiny - Proyecto demo de portafolio</footer>
+
+<script>
+    fetch('/members').then(r=>r.json()).then(data=>{
+        let html='';
+        data.forEach(m=>{
+            html+=`<div class="card"><b>${m.name}</b><p>${m.wowClass} - ${m.rank}</p></div>`;
+        });
+        document.getElementById('members').innerHTML=html;
+    });
+</script>
+</body>
+</html>
