@@ -1,7 +1,7 @@
-package com.thelastdestiny.thelastdestiny.Controller;
+package com.thelastdestiny.thelastdestiny.controller;
 
-import com.thelastdestiny.thelastdestiny.Entity.*;
-import com.thelastdestiny.thelastdestiny.Service.GuildBank;
+import com.thelastdestiny.thelastdestiny.entity.*;
+import com.thelastdestiny.thelastdestiny.service.GuildBank;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

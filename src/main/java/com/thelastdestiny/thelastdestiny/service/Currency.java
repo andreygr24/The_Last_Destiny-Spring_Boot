@@ -1,4 +1,4 @@
-package com.thelastdestiny.thelastdestiny.Service;
+package com.thelastdestiny.thelastdestiny.service;
 
 import java.text.NumberFormat;
 import java.util.Locale;

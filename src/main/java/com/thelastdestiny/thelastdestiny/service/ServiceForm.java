@@ -1,6 +1,6 @@
-package com.thelastdestiny.thelastdestiny.Service;
+package com.thelastdestiny.thelastdestiny.service;
 
-import com.thelastdestiny.thelastdestiny.Entity.Apply;
+import com.thelastdestiny.thelastdestiny.entity.Apply;
 import org.springframework.stereotype.Service;
 
 @Service

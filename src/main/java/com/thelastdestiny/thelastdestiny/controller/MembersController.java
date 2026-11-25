@@ -1,8 +1,8 @@
-package com.thelastdestiny.thelastdestiny.Controller;
+package com.thelastdestiny.thelastdestiny.controller;
 
 
-import com.thelastdestiny.thelastdestiny.Entity.Members;
-import com.thelastdestiny.thelastdestiny.Service.ServiceMembers;
+import com.thelastdestiny.thelastdestiny.entity.Members;
+import com.thelastdestiny.thelastdestiny.service.ServiceMembers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

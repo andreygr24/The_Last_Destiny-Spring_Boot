@@ -1,7 +1,7 @@
-package com.thelastdestiny.thelastdestiny.Controller;
+package com.thelastdestiny.thelastdestiny.controller;
 
 
-import com.thelastdestiny.thelastdestiny.Service.ServiceLogin;
+import com.thelastdestiny.thelastdestiny.service.ServiceLogin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

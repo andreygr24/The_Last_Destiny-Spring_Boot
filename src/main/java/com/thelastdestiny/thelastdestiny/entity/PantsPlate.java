@@ -1,4 +1,5 @@
-package com.thelastdestiny.thelastdestiny.Entity;
+package com.thelastdestiny.thelastdestiny.entity;
+
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
@@ -8,19 +9,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "boots_leather")
-public class BootsLeather extends ItemWoW {
+@Table(name = "pants_plate")
+public class PantsPlate extends ItemWoW {
 
 @ElementCollection
 private List<String> attributes = new ArrayList<>();
 
-    public BootsLeather() {}
+    public PantsPlate() {}
 
-    public BootsLeather(String name, String type, String spec, int price) {
+    public PantsPlate(String name, String type, String spec, int price) {
         super(name, type, spec, price);
-        this.attributes.add("Stamina +550");
-        this.attributes.add("Armor +250");
-        this.attributes.add("Agility +300");
+        this.attributes.add("Armor +220");
+        this.attributes.add("Stamina +480");
+        this.attributes.add("Strength +550");
     }
 
     public List<String> getAttributes() { return attributes; }

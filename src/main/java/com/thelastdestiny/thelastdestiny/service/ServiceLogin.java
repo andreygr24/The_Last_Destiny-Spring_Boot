@@ -1,4 +1,4 @@
-package com.thelastdestiny.thelastdestiny.Service;
+package com.thelastdestiny.thelastdestiny.service;
 
 
 import org.springframework.stereotype.Service;

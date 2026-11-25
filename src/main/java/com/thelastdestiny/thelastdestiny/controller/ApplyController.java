@@ -1,8 +1,8 @@
-package com.thelastdestiny.thelastdestiny.Controller;
+package com.thelastdestiny.thelastdestiny.controller;
 
 
-import com.thelastdestiny.thelastdestiny.Entity.Apply;
-import com.thelastdestiny.thelastdestiny.Service.ServiceForm;
+import com.thelastdestiny.thelastdestiny.entity.Apply;
+import com.thelastdestiny.thelastdestiny.service.ServiceForm;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

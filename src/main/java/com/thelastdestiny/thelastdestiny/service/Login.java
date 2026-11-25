@@ -1,4 +1,4 @@
-package com.thelastdestiny.thelastdestiny.Service;
+package com.thelastdestiny.thelastdestiny.service;
 
 
 public class Login {

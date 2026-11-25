@@ -1,6 +1,6 @@
-package com.thelastdestiny.thelastdestiny.Service;
+package com.thelastdestiny.thelastdestiny.service;
 
-import com.thelastdestiny.thelastdestiny.Entity.Members;
+import com.thelastdestiny.thelastdestiny.entity.Members;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
