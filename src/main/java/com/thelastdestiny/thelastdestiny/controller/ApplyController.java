@@ -19,6 +19,12 @@ public class ApplyController {
 
     public ApplyController(ServiceForm serviceForm) {
         this.serviceForm = serviceForm;
+
+        Apply demo = serviceForm.createForm("Demo", "demo@test.com", "CR", 20, "DemoChar", "RDPS", "Affliction",
+                "I want to join");
+        if (demo != null) {
+            applies.add(demo);
+        }
     }
 
     @GetMapping("/apply")
