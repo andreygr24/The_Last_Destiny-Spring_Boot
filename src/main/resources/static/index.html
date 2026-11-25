@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Last Destiny - Backend Demo</title>
+    <title>The Last Destiny Guild</title>
     <style>
-        body { background: #000; color: #fff; font-family: Arial; padding: 20px; }
-        h1 { color: #a855f7; }
-        button { background: #a855f7; color: #fff; border: none; padding: 10px 18px; margin: 5px; border-radius: 8px; cursor: pointer; }
-        button:hover { background: #7c3aed; }
-        pre { background: #111; border: 1px solid #c0c0c0; padding: 15px; border-radius: 8px; overflow: auto; }
+        body { background: #000; color: #fff; font-family: Arial; text-align: center; padding-top: 70px; }
+        h1 { color: #a855f7; font-size: 46px; margin: 0; }
         p { color: #c0c0c0; }
+        button { background: #a855f7; color: #fff; border: none; padding: 15px 24px; margin: 8px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+        pre { background: #111; border: 1px solid #c0c0c0; padding: 16px; border-radius: 12px; text-align: left; max-width: 650px; margin: 28px auto; }
     </style>
 </head>
 <body>
-<h1>The Last Destiny</h1>
-<p>Backend Demo - Java + Spring Boot</p>
+<h1>The Last Destiny Guild</h1>
+<p>Backend Demo - Java + Spring Boot + MySQL</p>
 
-<button onclick="load('/members')">Ver Miembros</button>
-<button onclick="load('/bank')">Ver Banco</button>
-<button onclick="load('/apply')">Ver Applies</button>
+<button onclick="load('/members')">View Members</button>
+<button onclick="load('/bank')">View Bank</button>
+<button onclick="load('/apply')">View Applies</button>
 
-<pre id="out">Click on the boton for check my code...</pre>
+<pre id="out">Click a button to see the data...</pre>
 
 <script>
     async function load(url) {
         const r = await fetch(url);
-        const data = await r.json();
-        document.getElementById('out').textContent = JSON.stringify(data, null, 2);
+        document.getElementById('out').textContent = JSON.stringify(await r.json(), null, 2);
     }
 </script>
 </body>
