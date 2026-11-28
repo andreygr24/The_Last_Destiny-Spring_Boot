@@ -49,6 +49,8 @@ public class Apply {
         this.country = country;
         this.age = age;
     }
+    @Enumerated (EnumType.STRING)
+    private ApplyStatus status = ApplyStatus.PENDING;
 
     public Long getId() { return id; }
     public String getName() { return name; }
@@ -59,6 +61,7 @@ public class Apply {
     public String getRole() { return role; }
     public String getSpec() { return spec; }
     public String getTellMeAboutYourSelf() { return tellMeAboutYourSelf; }
+    public ApplyStatus getStatus() {return status;}
 
     public void setName(String name) { this.name = name; }
     public void setEmail(String email) { this.email = email; }
@@ -68,5 +71,5 @@ public class Apply {
     public void setSpec(String spec) { this.spec = spec; }
     public void setTellMeAboutYourSelf(String tellMeAboutYourSelf) { this.tellMeAboutYourSelf = tellMeAboutYourSelf; }
     public void setAge(int age) { this.age = age; }
-
+    public void setStatus(ApplyStatus status) {this.status  = status;}
 }
